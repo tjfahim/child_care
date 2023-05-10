@@ -36,7 +36,7 @@
             </div>
             <div id="menu" class="col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="#1–2">1–2 years</a></li>
                 <li><a href="#3">3 years</a></li>
                 <li><a href="#4-5">4-5 years</a></li>

@@ -36,11 +36,11 @@
             </div>
             <div id="menu" class="col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#education">Child Education</a></li>
                 <li><a href="#food">Baby Food</a></li>
                 <li><a href="#disease">Disease & Doctor Advice</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="contact_us.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -75,7 +75,7 @@
                       Discover These 3 Joys of Reading Think Less About How You
                       Parent and More About Who You Are
                     </p>
-                    <a href="disease.html" class="btn btn-info hidden-xs"
+                    <a href="disease.php" class="btn btn-info hidden-xs"
                       >Child Education</a
                     >
                   </div>
@@ -123,7 +123,7 @@
                   </h1>
                   <p class="slider-text hidden-xs">Malaria, pneumonia, diarrhoea, HIV and tuberculosis are preventable and treatable. But they are still killing children in large numbers.</p>
 
-                  <a href="disease.html" class="btn btn-info hidden-xs">Disease</a>
+                  <a href="disease.php" class="btn btn-info hidden-xs">Disease</a>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@
             <img src="assets/images/services/gallery_01.jpg" alt="" />
             <h4>One to Four Year</h4>
            
-           <a href="education/max_four.html"> <button class="btn btn-info">
+           <a href="education/max_four.php"> <button class="btn btn-info">
               Readmore <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
@@ -152,7 +152,7 @@
             <img src="assets/images/services/gallery_02.jpg" alt="" />
             <h4>Five to Eight Year</h4>
            
-          <a href="education/max_eight.html">  <button class="btn btn-info">
+          <a href="education/max_eight.php">  <button class="btn btn-info">
               Readmore <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
@@ -160,7 +160,7 @@
             <img src="assets/images/services/gallery_03.jpg" alt="" />
             <h4>Quiz</h4>
             
-           <a href="education/quiz.html"> <button class="btn btn-info">
+           <a href="education/quiz.php"> <button class="btn btn-info">
               Readmore <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
@@ -168,7 +168,7 @@
             <img src="assets/images/services/gallery_04.jpg" alt="" />
             <h4>Story</h4>
            
-           <a href="education/story.html"> <button class="btn btn-info">
+           <a href="education/story.php"> <button class="btn btn-info">
               Readmore <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
@@ -198,7 +198,7 @@
                   <p>
                     Wondering what you should give your 1 year old baby? Read the article to get tips
                   </p>
-                  <a href="education/max_one.html">  <button class="btn btn-info">
+                  <a href="education/max_one.php">  <button class="btn btn-info">
                     Readmore <i class="fas fa-arrow-right"></i>
                   </button></a>
                 </div>
@@ -214,7 +214,7 @@
                   <p>
                     Children feel better when they eat well. During the preschool and kindergarten years, your child should be eating the same foods as the rest of the family.
                   </p>
-                  <a href="education/max_five.html">  <button class="btn btn-info">
+                  <a href="education/max_five.php">  <button class="btn btn-info">
                     Readmore <i class="fas fa-arrow-right"></i>
                   </button></a>
                 </div>
@@ -256,7 +256,7 @@
                   are common among infants and toddlers. If the child’s body
                   feels hot, he could also be running a fever.
                 </p>
-                <a href="disease1.html"
+                <a href="disease1.php"
                   >Read More <i class="fas fa-arrow-right"></i
                 ></a>
               </div>
@@ -276,7 +276,7 @@
                   trouble breathing? The small airways of his lungs could be
                   infected.
                 </p>
-                <a href="disease2.html"
+                <a href="disease2.php"
                   >Read More <i class="fas fa-arrow-right"></i
                 ></a>
               </div>

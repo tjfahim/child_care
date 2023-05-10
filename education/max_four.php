@@ -36,7 +36,7 @@
             </div>
             <div id="menu" class="col-md-9 d-none d-md-block nav-item">
               <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="#Short">Short stories</a></li>
                 <li><a href="#Animals">Animals</a></li>
                 <li><a href="#Flowers">Flowers</a></li>

@@ -30,11 +30,11 @@
                         </div>
                     <div id="menu" class="col-md-9 d-none d-md-block nav-item">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html">Baby Food</a></li>
-                            <li><a href="disease.html">Disease & Doctor Advice</a></li>
-                            <li><a href="index.html">Child Education</a></li>
-                            <li><a href="contact_us.html">Contact Us</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.php">Baby Food</a></li>
+                            <li><a href="disease.php">Disease & Doctor Advice</a></li>
+                            <li><a href="index.php">Child Education</a></li>
+                            <li><a href="contact_us.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

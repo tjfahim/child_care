@@ -26,11 +26,11 @@
                   </div>
                   <div id="menu" class="col-md-9 d-none d-md-block nav-item">
                     <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="index.html">Child Education</a></li>
-                      <li><a href="index.html">Baby Food</a></li>
-                      <li><a href="index.html">Disease & Doctor Advice</a></li>
-                      <li><a href="contact_us.html">Contact Us</a></li>
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="index.php">Child Education</a></li>
+                      <li><a href="index.php">Baby Food</a></li>
+                      <li><a href="index.php">Disease & Doctor Advice</a></li>
+                      <li><a href="contact_us.php">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
@@ -55,7 +55,7 @@
                                     <h2>Common Cold</h2>
                                    
                                     <p class="blog-desic">Does your child have a blocked or runny nose and watery eyes? Is he sneezing and coughing? He could be having a cold. Colds are common among infants and toddlers. If the child’s body feels hot, he could also be running a fever.  </p>
-                                    <a href="disease1.html">Read More <i class="fas fa-arrow-right"></i></a>
+                                    <a href="disease1.php">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     <h2>Bronchitis and Bronchiolitis  </h2>
                                     
                                     <p class="blog-desic">Is your child wheezing i.e. making a high-pitched whistling sound when breathing out? Is he breathing rapidly and having trouble breathing? The small airways of his lungs could be infected.  </p>
-                                    <a href="disease2.html">Read More <i class="fas fa-arrow-right"></i></a>
+                                    <a href="disease2.php">Read More <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
