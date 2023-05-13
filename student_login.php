@@ -1,12 +1,48 @@
 
+<?php 
+include('include/connection.php');
 
+if(isset($_POST['login'])){
+    $username = $_POST['uname'];
+    $password = $_POST['password'];
+
+    $error=array();
+    
+    
+    if(empty($username)){
+        $error['student']=['Enter Username'];
+       
+    }else if(empty($password)){
+        $error['student']=['Enter Password'];
+    }
+   
+    if(count($error)==0){
+        $query="select * from student where username='$username' and password='$password'";
+        $result=mysqli_query($con,$query);
+        if(mysqli_num_rows($result)==1){
+            
+            echo"<script>alert('You are login as Student')</script>";
+            session_start();
+            $_SESSION['student']=$username;
+            // header("location:admin/index.php");
+
+            header("location:index.php");
+            exit();
+        }else{
+           
+            echo"<script>alert('Invalid Username or Password')</script>";
+        }
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin login</title>
+    <title>Student login</title>
 </head>
 <body></body>
 <?php 

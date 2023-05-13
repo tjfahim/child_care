@@ -1,4 +1,6 @@
 <?php 
+   session_start();
+
     include("include/header.php");
     include("include/slider.php");
      ?>
@@ -12,13 +14,13 @@
         <h2>Education</h2>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row"> 
           <div class="col-md-3 col-sm-6 vd">
             <img src="assets/images/services/gallery_01.jpg" alt="" />
             <h4>One to Four Year</h4>
            
            <a href="education/max_four.php"> <button class="btn btn-info">
-              Readmore <i class="fas fa-arrow-right"></i>
+              Read more <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
           <div class="col-md-3 col-sm-6 vd">

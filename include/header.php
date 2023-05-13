@@ -43,13 +43,23 @@
                 <li><a href="logout.php">Logout</a></li>';
 
             }else if(isset($_SESSION['student'])){
-                $user=$_SESSION['student'];
-                echo'<li class="nav-item"><a href="profile.php" class="nav-link text-white">'.$user.'</a></li>
-                <li class="nav-item"><a href="logout.php" class="nav-link text-white">Logout</a></li>';
+              $user=$_SESSION['student'];
+              echo'
+              
+              <li><a href="index.php">Home</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#food">Food</a></li>
+              <li><a href="#disease">Disease</a></li>
+              <li><a href="contact_us.php">Contact</a></li>
+              <li><a href="profile.php" >Hello '.$user.'</a></li>
+              <li><a href="student_logout.php">Logout</a></li>';
+
+                
             
             }
             else{
                 echo '   
+                
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#food">Food</a></li>
