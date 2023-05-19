@@ -49,7 +49,7 @@
               <li><a href="index.php">Home</a></li>
               <li><a href="#education">Education</a></li>
               <li><a href="#food">Food</a></li>
-              <li><a href="#disease">Disease</a></li>
+              <li><a href="disease.php">Disease</a></li>
               <li><a href="contact_us.php">Contact</a></li>
               <li><a href="profile.php" >Hello '.$user.'</a></li>
               <li><a href="student_logout.php">Logout</a></li>';

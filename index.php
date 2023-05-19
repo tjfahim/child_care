@@ -107,6 +107,7 @@
     </section>
 
     <!--  ************************* Blog Starts Here ************************** -->
+    
     <div class="health-care" id="disease">
       <div class="row session-title">
         <h2>Latest Disease treatment</h2>
@@ -116,47 +117,51 @@
         </p>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="blog-singe no-margin row">
-              <div class="col-sm-5 blog-img-tab">
-                <img src="assets/images/blog/blog_01.jpg" alt="" />
-              </div>
-              <div class="col-sm-7 blog-content-tab">
-                <h2>Common Cold</h2>
+        <div class="row"> <?php
+                                include("include/connection.php");
+                                $quu= "SELECT * FROM disease ORDER BY id DESC LIMIT 2";
+                                   $res=mysqli_query($con,$quu);
+                                   $output="";
+                                   $output .=" ";
+                                if(mysqli_num_rows($res)<1){
+                                    $output .="
+                                    <tr>
+                                        <td  class='text-center'>No Job Available.</td>
+                                    </tr>
+                                    "
+                                    ;
+                                }
+                                while($row = mysqli_fetch_array($res)){
+                                    $id=$row['id'];
+                                    $output .="
+                                    <div class='col-md-6 col-sm-12'>
 
-                <p class="blog-desic">
-                  Does your child have a blocked or runny nose and watery eyes?
-                  Is he sneezing and coughing? He could be having a cold. Colds
-                  are common among infants and toddlers. If the child’s body
-                  feels hot, he could also be running a fever.
-                </p>
-                <a href="disease1.php"
-                  >Read More <i class="fas fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="blog-singe no-margin row">
-              <div class="col-sm-5 blog-img-tab">
-                <img src="assets/images/blog/blog_02.jpg" alt="" />
-              </div>
-              <div class="col-sm-7 blog-content-tab">
-                <h2>Bronchitis and Bronchiolitis</h2>
+                                    <div class='blog-singe no-margin row'>
 
-                <p class="blog-desic">
-                  Is your child wheezing i.e. making a high-pitched whistling
-                  sound when breathing out? Is he breathing rapidly and having
-                  trouble breathing? The small airways of his lungs could be
-                  infected.
-                </p>
-                <a href="disease2.php"
-                  >Read More <i class="fas fa-arrow-right"></i
+                                    <div class='col-sm-5 blog-img-tab'>
+                                    <img src=assets/".$row['image']." width='290' height='200' >
+                                </div>
+                                <div class='col-sm-7 blog-content-tab'>
+                                    <h2>".$row['title']."</h2>
+                                   
+                                    <p class='blog-desic'>".$row['description']."  </p>
+                                    <a href='disease_details.php?id=$id'>Read More <i class='fas fa-arrow-right'></i></a>
+                                </div>
+                                        
+                                    </div>
+                            </div>
+
+                                    ";
+                                }
+                               
+        
+                                    echo $output;
+        
+                                
+                                ?>
+          <a class="btn btn-primary mt-3" style="margin-left: 45%;" href="disease.php"
+                  >Show More <i class="fas fa-arrow-down"></i
                 ></a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

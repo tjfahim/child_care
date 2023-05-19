@@ -1,43 +1,34 @@
-<!doctype html>
-<html lang="en">
+<?php 
+    include("include/connection.php");
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Child Care System</title>
+ 
+if(isset($_POST['create'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+    $message = $_POST['msg'];
+   
+    
+$query="INSERT INTO message(name,email,mobile,message,date) VALUES ('$name','$email','$mobile','$message',NOW())";
+$res=mysqli_query($con,$query);
+if($res)
+{
+	// header("location:contact_us.php");
+  echo '<div class="text-success">Message Send Successfully</div>'   ;
 
-    <link rel="shortcut icon" href="assets/images/fav.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
-    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-</head>
+}
+else 
+{
+	echo 'Something went wrong'; 
+}
+}
+		
+include("include/header.php");
 
-    <body>
-        <header>
-            <div id="nav-head" class="header-nav">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-3 col-sm-12 mt-4">
-                    <h3>Child Care System</h3>
-                  </div>
-                  <div id="menu" class="col-md-9 d-none d-md-block nav-item">
-                    <ul>
-                      <li><a href="index.php">Home</a></li>
-                      <li><a href="#education">Child Education</a></li>
-                      <li><a href="#food">Baby Food</a></li>
-                      <li><a href="#disease">Disease & Doctor Advice</a></li>
-                      <li><a href="contact_us.php">Contact Us</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
-      
+?>
+
        <!--  ************************* Page Title Starts Here ************************** -->
+       
                <div class="page-nav no-margin row">
                    <div class="container">
                        <div class="row">
@@ -65,31 +56,37 @@
                
           
             <div style="padding:20px" class="col-sm-6">
+            <form action="" method="post" >
+
+    
             <h2 style="font-size:18px">Contact Form</h2>
                 <div class="row">
-                    <div style="padding-top:10px;" class="col-sm-3"><label>Enter Name :</label></div>
+                    <div style="padding-top:10px;"  class="col-sm-3"><label>Enter Name :</label></div>
                     <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
                 </div>
                 <div style="margin-top:10px;" class="row">
                     <div style="padding-top:10px;" class="col-sm-3"><label>Email Address :</label></div>
-                    <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                    <div class="col-sm-8"><input type="text" name="email" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
                 </div>
                  <div style="margin-top:10px;" class="row">
                     <div style="padding-top:10px;" class="col-sm-3"><label>Mobile Number:</label></div>
-                    <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
+                    <div class="col-sm-8"><input type="text" name="mobile" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
                 </div>
                  <div style="margin-top:10px;" class="row">
                     <div style="padding-top:10px;" class="col-sm-3"><label>Enter  Message:</label></div>
-                    <div class="col-sm-8">
-                      <textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                    <div class="col-sm-8" >
+                      <textarea rows="5" placeholder="Enter Your Message" name="msg" class="form-control input-sm"></textarea>
                     </div>
                 </div>
                  <div style="margin-top:10px;" class="row">
                     <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
                     <div class="col-sm-8">
-                     <button class="btn btn-info btn-sm">Send Message</button>
+
+                     <button class="btn btn-info btn-sm" type="submit" name="create" >Send Message</button>
                     </div>
                 </div>
+
+                </form>
             </div>
              <div class="col-sm-6">
                     
