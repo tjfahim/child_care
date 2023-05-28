@@ -26,8 +26,12 @@ $image_file=$_FILES['image']['name'];
 if(!isset($error))
 {
 move_uploaded_file($file,$target_file); 
-$query="INSERT INTO food(categories,title,description,image,date) VALUES ('$categories','$title','$description','$image_file',NOW())";
-$result=mysqli_query($con,$query);
+
+// $result=mysqli_query($con,$query);
+
+$query = "INSERT INTO food (categories, title, description, image, date) VALUES ('$categories', '$title', '$description', '$image_file', NOW())";
+$result = mysqli_query($con, $query);
+
 if($result)
 {
 	header("location:food.php");

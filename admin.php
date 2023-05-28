@@ -22,6 +22,8 @@ if(isset($_POST['login'])){
             
             echo"<script>alert('You are login as Admin')</script>";
             session_start();
+            $_SESSION['logged_in'] = true;
+
             $_SESSION['admin']=$username;
             header("location:admin/index.php");
             exit();

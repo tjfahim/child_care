@@ -90,7 +90,7 @@
                         if(mysqli_num_rows($res)<1){
                             $output .="
                             <tr>
-                                <td colspan='8' class='text-center'>No post done yet</td>
+                                <td colspan='8' class='text-center'>No message done yet</td>
                             </tr>
                             "
                             ;

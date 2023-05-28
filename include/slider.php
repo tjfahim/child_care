@@ -25,7 +25,7 @@
                       Discover These 3 Joys of Reading Think Less About How You
                       Parent and More About Who You Are
                     </p>
-                    <a href="disease.php" class="btn btn-info hidden-xs"
+                    <a href="#education" class="btn btn-info hidden-xs"
                       >Child Education</a
                     >
                   </div>

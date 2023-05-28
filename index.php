@@ -15,6 +15,14 @@
       </div>
       <div class="container">
         <div class="row"> 
+        <div class="col-md-3 col-sm-6 vd">
+            <img src="assets/images/services/gallery_04.jpg" alt="" />
+            <h4>Alphabet</h4>
+           
+           <a href="education/alphabet.php"> <button class="btn btn-info">
+              Readmore <i class="fas fa-arrow-right"></i>
+            </button></a>
+          </div>
           <div class="col-md-3 col-sm-6 vd">
             <img src="assets/images/services/gallery_01.jpg" alt="" />
             <h4>One to Four Year</h4>
@@ -39,14 +47,7 @@
               Readmore <i class="fas fa-arrow-right"></i>
             </button></a>
           </div>
-          <div class="col-md-3 col-sm-6 vd">
-            <img src="assets/images/services/gallery_04.jpg" alt="" />
-            <h4>Story</h4>
-           
-           <a href="education/story.php"> <button class="btn btn-info">
-              Readmore <i class="fas fa-arrow-right"></i>
-            </button></a>
-          </div>
+         
         </div>
       </div>
     </section>
